@@ -1,52 +1,87 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
 <head>
 <title>garbage.variable</title>
 <meta charset="UTF-8">
 <meta name="description" content="This field contains information about your page. It is usually around two sentences long.">
 <meta name="author" content="Conor Sheils">
- <style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+h1{
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Cairo', serif;
+  font-size:20px;
+}
+
+.slika{
+width:300px;
+height:250px;
+margin:0px;
+padding:0px;
+}
+
+
+body{
+background-color: rgba(25,70,70,.5);
+}
+
+img{
+width:200px;
+height:200px;
+border-radius: 50%;
+transform: rotate(90deg) scale(1, -1);
+border: solid red 7px;
+}
+
+img:hover{
+animation: krug 500ms infinite;  
+
+}
+
+
+hr{
+  height:20px;
+  background-color:rgba(50,205,10,1);
+  position:absolute;
+  width:300px;  
+  top:360px;
+  animation: skembio 3s infinite;
+}
+
+
+@keyframes krug{
+0%{
+height:200px;
+}
+
+50%{
+height:185px;
+width:205px;
+}
+
+100%{
+height:200px;
+}
+}
+
+@keyframes skembio {
+
+  0%,100%{
+    background-color:rgba(50,205,10,1);
+  }
+
+  50%
+  {
+    background-color:rgba(0,0,10,1);
+  }
   
-  slika{
-   width:600px;
-   border:solid black 2px;
-   margin:auto;
-   
-   body{
-     background-color: rgba(25,70,70,.5);
-   }
-
-   img{
-     width:200px;
-     height:200px;
-     border-radius: 20%;
-   }
-  img:hover{
-    width:200px;
-    height:200px;
-    animation: krug 1s infinite;
-
-  }
-
-
-  @keyframes krug{
-    0%{
-      border-radius: 20%;
-      width:200px;
-
-    }
-
-    50%{
-      border-radius: 50%;
-      height:300px;
-    }
-
-    100%{
-      border-radius: 20%;
-    }
-  }
- </style>
+}
+</style>
 </head>
 
 <!-- BODY -->
@@ -54,9 +89,10 @@
 <h1>Titolo da pirla</h1>
 <p>WOLJKE INU TRTE...</p>
 <p>...MWORJE INU ŠAJETE.</p>
-<div class="slika>
-<img src="https://user-images.githubusercontent.com/56490405/68286125-d1915d00-0080-11ea-96f9-251be903da6f.jpg" alt="pokaži sliko jebote!" width="511" height="511">
+<div class="slika">
+<img id="lk" src="https://user-images.githubusercontent.com/56490405/68286125-d1915d00-0080-11ea-96f9-251be903da6f.jpg" alt="pokaži sliko jebote!" width="511" height="511">
 </div>
+<hr>
 <p>
 <a href="https://youtu.be/3Jd3sIds3Ks">Answer to life!</a>
 </p>
@@ -65,3 +101,4 @@
 
 
 </html>
+
